@@ -16,7 +16,7 @@ if($row['total'] == 1) {
 	exit;
 }
 
-$sql = "INSERT INTO contas (nome, username, password) VALUES ('$nome', '$usuario', '$senha');";
+$sql = "INSERT INTO 'contas'.'contas' (id, nome, username, password) VALUES ('',$nome', '$usuario', '$senha');";
 
 if($conexao->query($sql) === TRUE) {
 	$_SESSION['status_cadastro'] = true;
